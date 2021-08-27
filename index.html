@@ -20,13 +20,13 @@
 				<!-- First slide -->
 				<section ch="-1" style="position: relative; height: 100%;">
 					<h3 style="color: rgb(10,100,147); margin: 5%">The EU Knowledge Graph</h3>
-					<div style="font-size: 25px; padding-top: 25px;">by Dennis Diefenbach (The QA Company)</div>
+					<div style="font-size: 25px; padding-top: 25px;">Dennis Diefenbach (The QA Company)</div>
 					<div style="font-size: 25px; padding-top: 25px;">Max De Wilde (DG CNECT, European Commission)</div>
 					<div style="font-size: 25px; padding-top: 25px;">Anne Thollard (DG REGIO, European Commission)</div>
 					<div style="font-size: 25px; padding-top: 25px;">@Semantics 2021 (hybrid)</div>
-					<div style="font-size: 25px; padding-top: 25px;">26.08.2020</div>
+					<div style="font-size: 25px; padding-top: 25px;">07.09.2021</div>
                     <img src="assets/logo_QA.png" style="margin-top: 5%; height: 100px; border: none; box-shadow: none;">
-					<img src="http://commons.wikimedia.org/wiki/Special:FilePath/European%20Commission.svg" style="margin-top: 5%; height: 100px; border: none; box-shadow: none;">
+					<!--<img src="http://commons.wikimedia.org/wiki/Special:FilePath/European%20Commission.svg" style="margin-top: 5%; height: 100px; border: none; box-shadow: none;">-->
 					<img src="assets/semantics-amsterdam-2021-2.png" style="margin-top: 5%; height: 70px; border: none; box-shadow: none; margin-left: 30px;">
 					<!--<h4>From BibTeX input:</h4>-->
 					<div id="key1" class="cite" data-type="bib" ></div>
@@ -63,10 +63,10 @@
 					<h2>The EU Knowledge Graph<div style="vertical-align: top; font-size: smaller; display: inline;"></div></h2>
 				</section>
 				<section ch="2">
-					<div>A data repository to store structured data about the European Commission</div>
+					<div>A data repository to store structured data about the European Union</div>
 				</section>
 				<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/The_EU_Knowledge_Graph" data-background-interactive>
-					<div style="margin-top: 50%">Available at <a href="https://linkedopendata.eu/">https://linkedopendata.eu/</a> </div>
+					<div style="margin-top: 50%">Available at <a href="https://linkedopendata.eu/">https://knowledgegraph.eu/</a> </div>
 				</section>
 				<section>
 					<section ch="2">
@@ -85,7 +85,7 @@
 					<section ch="2">
 						<div>Can be queried</div>
 					</section>
-					<section ch="2" data-background-iframe="https://query.linkedopendata.eu/#%20SELECT%20DISTINCT%20%3Fname%20%3Fo2%20WHERE%20%7B%20%0A%20%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ1%3E%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP104%3E%20%20%3Fo1%20.%20%0A%20%20%20%3Fo1%20rdfs%3Alabel%20%3Fname%20.%0A%20%20%20FILTER%20%28lang%28%3Fname%29%3D%22en%22%29%0A%20%20%20%3Fo1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP9%3E%20%20%3Fo2%20.%20%0A%20%7D%20%20order%20by%20desc%28%3Fo2%29" data-background-interactive>
+					<section ch="2" data-background-iframe="https://query.linkedopendata.eu/#%20SELECT%20DISTINCT%20%3Fcountry%20%3Fpopulation%20WHERE%20%7B%20%0A%20%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ1%3E%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP104%3E%20%20%3Fo1%20.%20%0A%20%20%20%3Fo1%20rdfs%3Alabel%20%3Fcountry%20.%0A%20%20%20FILTER%20%28lang%28%3Fcountry%29%3D%22en%22%29%0A%20%20%20%3Fo1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP9%3E%20%20%3Fpopulation%20.%20%0A%20%7D%20%20order%20by%20desc%28%3Fpopulation%29" data-background-interactive>
 					</section>
 					<section ch="2">
 						<div>Can be edited by humans and by bots</div>
@@ -136,6 +136,9 @@
 					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q19837" data-background-interactive>
 						<div>942.289 projects financed by the European Union</div>
 					</section>
+					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q2509317" data-background-interactive>
+						<div>257.784 beneficiaries of EU funds</div>
+					</section>
 				</section>
 				<section>
 					<section ch="2">
@@ -143,7 +146,7 @@
 					</section>
 					<section ch="2">
 						<h3> 1. Take any structured data</h3>
-							<img src="assets/buildings.png" style="width: 40%;">
+							<img src="assets/buildings.png" style="width: 80%;">
 					</section>
 					<section ch="2">
 						<h3> 2. Model the data</h3>
@@ -181,13 +184,15 @@
 						<h3> 1. Entities imported from Wikidata</h3>
 					</section>
 					<section ch="2" data-background-iframe="https://www.wikidata.org/wiki/Q38" data-background-interactive>
+						<div style="margin-bottom: 90%">Wikidata ...</div>
 					</section>
 					<section ch="2" data-background-iframe="https://linkedopendata.eu/wiki/Item:Q15" data-background-interactive>
+						<div style="margin-bottom: 90%">Eu Knowledge Graph</div>
 					</section>
 					<section ch="2">
-						<h3> 2. Entities imported from other sources</h3>
-						<div> Use the identifier to find the entity in the KG.</div>
-						<div> Check what has changed and make an update.</div>
+						<h3 style="text-transform: none;"> WikidataUpdater</h3>
+						<div> A bot that checks that the data is in sync.</div>
+						<div> Checks every 5 min!</div>
 					</section>
 				</section>
 				<section>
@@ -204,7 +209,7 @@
 						<h3> 2. Query Service</h3>
 						<div>Available at <a href="https://query.linkedopendata.eu">https://query.linkedopendata.eu</a></div>
 					</section>
-					<section ch="2" data-background-iframe="https://query.linkedopendata.eu/#%20SELECT%20DISTINCT%20%3Fs1%20%3Fcoordinates%20WHERE%20%7B%0A%20%20%20%20%20%3Fs1%20%20%3Fp1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ63%3E%20.%20%0A%09%20%3Fs1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP35%3E%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ8636%3E%20.%20%0A%20%20%20%20%20%3Fs1%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP127%3E%20%3Fcoordinates%20.%0A%20%7D%20%20LIMIT%201000" data-background-interactive>
+					<section ch="2" data-background-iframe="https://query.linkedopendata.eu/#%23defaultView%3AMap%20%0ASELECT%20DISTINCT%20%3Fs1%20%3Fcoordinates%20WHERE%20%7B%0A%20%20%20%20%20%3Fs1%20%20%3Fp1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ63%3E%20.%20%0A%09%20%3Fs1%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP35%3E%20%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fentity%2FQ8636%3E%20.%20%0A%20%20%20%20%20%3Fs1%20%3Chttps%3A%2F%2Flinkedopendata.eu%2Fprop%2Fdirect%2FP127%3E%20%3Fcoordinates%20.%0A%20%7D%20%20LIMIT%201000" data-background-interactive>
 					</section>
 					<section ch="2">
 						<h3> 3. Question Answering</h3>
@@ -238,7 +243,7 @@
 				<section ch="3">
 					<h2>What is Kohesio?</h2>
 					<ul>
-						<li>The money is given to the 27 member states which have to implement the projects</li>
+						<li>The money is given to the 27 member states which have to implement the projects.</li>
 						<li>The member states report back to the European Commission how the money was spent.</li>
 						<li>The objective of Kohesio is to aggregate this data and make it accessible to citizens.</li>
 					</ul>
@@ -246,7 +251,7 @@
 				<section ch="3">
 					<h2>Data</h2>
 					<ol>
-						<li>Around 20 files in csv, xlsx or xls describing the projects of 6 pilot countries</li>
+						<li>Dozens of files in csv, xlsx or xls describing the projects of EU countries</li>
 						<li>Around 15 files in csv, xlsx or xls describing vocabulary of the Cohesion Policy: categories of interventions, policy objectives, ....</li>
 						<li>Data about geographic entities (NUTS)</li>
 						<li>Wikidata</li>
@@ -257,7 +262,7 @@
 				<section ch="3">
 					<h2>Enrich the data</h2>
 					<ol>
-						<li>Translate the project descriptions to English</li>
+						<li>Translate the project names and descriptions to English</li>
 						<li>Compute geo coordiantes for every project</li>
 						<li>Compute in which region the project is contained</li>
 						<li>Link the NUTS with information from Wikidata</li>
@@ -285,12 +290,12 @@
 					<div style="float: left">We have shown:</div>
 					<ol>
 						<li>how Wikibase is used as an infrastructure in the EU Knwoledge Graph (KG)</li>
-						<li>what is the content of the EU KG, how the data is ingested, maintained fresh and which services are offered.</li>
+						<li>what is the content of the EU KG, how the data is ingested, maintained fresh and which services are offered</li>
 						<li>a concrete use case: Kohesio</a></li>
 					</ol>
 				</section>
 				<section ch="0">
-					<div>Acknowledgmentes:</div>
+					<div>Acknowledgements:</div>
 					<ul>
 						<li>Doris Team @ DG Connect</li>
 						<li>Knowledge Management @ DG Regio</li>
